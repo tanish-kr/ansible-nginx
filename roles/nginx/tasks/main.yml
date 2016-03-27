@@ -1,0 +1,10 @@
+---
+- name: nginx add repos
+  template: src=nginx.repo.j2 dest=/etc/yum.repos.d/nginx.repo mode=644
+  when: ansible_os_family == "RedHat"
+
+- name: nginx install
+  yum: name=nginx state=latest enablerepo=nginx
+
+- name: run nginx
+  service: name=nginx state=running enabled=yes

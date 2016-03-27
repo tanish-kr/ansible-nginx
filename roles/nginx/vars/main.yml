@@ -1,0 +1,4 @@
+nginx:
+  version: "1.9.12"
+  os: "centos"
+  os_release: 7
