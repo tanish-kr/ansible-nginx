@@ -1,4 +1,4 @@
-# Ansible playbook for mariadb install
+# Ansible playbook for nginx install
 
 ## Environment
 
